@@ -1,0 +1,7 @@
+nginx:
+  environment:
+    - VIRTUAL_HOST=example.loc
+  restart: always
+  build: ./docker/container/nginx/
+  volumes:
+    - ./:/var/www/html/

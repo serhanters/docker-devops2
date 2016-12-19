@@ -1,0 +1,7 @@
+nginx:
+  environment:
+    - VIRTUAL_HOST=domain.test
+  restart: always
+  build: ./docker/container/nginx/
+  volumes:
+    - ./:/var/www/html/

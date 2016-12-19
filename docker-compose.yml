@@ -1,0 +1,9 @@
+################ nginx-proxy Container ################
+nginx-proxy:
+  image: jwilder/nginx-proxy
+  container_name: nginx-proxy
+  ports:
+   - 80:80
+  volumes:
+    - /var/run/docker.sock:/tmp/docker.sock
+################ nginx-proxy Container ################
